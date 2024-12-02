@@ -6,7 +6,6 @@ app.get('/', (req, res)=>{
     res.send("Hello World")
 })
 
-
 app.get('/', (req, res)=>{
     res.send(`Current date and time : ${new Date()}`)
 })
