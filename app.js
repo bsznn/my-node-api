@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
   res.send(`Current date and time : ${new Date()}`);
 });
 
+app.get('/test', (req, res) => {
+  res.send("Test route");
+});
+
 app.post('/users', (req, res) => {
   const newUser = req.body;
   newUser.id = users.length + 1;
